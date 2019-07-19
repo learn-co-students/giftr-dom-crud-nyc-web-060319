@@ -1,4 +1,4 @@
-const gifts = [
+let gifts = [
   {
     id: 1,
     name: '8 pairs of socks',
@@ -17,7 +17,7 @@ const gifts = [
   },
   {
     id: 4,
-    name: 'the last dab',
-    image: 'https://cdn.shopify.com/s/files/1/2086/9287/products/LAstdabReduxx_1024x1024-1_1024x1024.jpg?v=1527778720'
+    name: 'Dexter',
+    image: 'https://www.thenextwavechicago.com/wp-content/uploads/2017/11/dexter.jpg'
   }
 ]
