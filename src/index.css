@@ -1,3 +1,7 @@
+#picture {
+  height: 5em;
+}
+
 #giftr-header {
     margin-top: 2rem;
 }
@@ -7,8 +11,8 @@
 }
 
 #gift-icon:hover {
-    animation: shake 0.7s; 
-    animation-iteration-count: infinite; 
+    animation: shake 0.7s;
+    animation-iteration-count: infinite;
 }
 
 @keyframes shake {
