@@ -94,7 +94,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     }
 
-    function searchGifts(){      
+    function searchGifts(e){  
+      console.log("E is: ", e)
+      e.preventDefault    
       const searchTerm = document.querySelector("#filter-input")
       console.log("Search term is: ", searchTerm);
       console.log("Search term value is: ", searchTerm.value);
@@ -106,22 +108,54 @@ document.addEventListener('DOMContentLoaded', () => {
       }
 
 
-          if (AllLIs.forEach(function(element) {
-            console.log("Element is: ", element)
-            console.log("Element innerText is: ", element.innerText)
-            console.log("searchTerm.value  is: ", searchTerm.value)
+      if (AllLIs.forEach(function(element) 
+      {
+        console.log("Element is: ", element)
+        console.log("Element innerText is: ", element.innerText)
+        console.log("searchTerm.value  is: ", searchTerm.value)
 
-            if ((element.innerText).includes(searchTerm.value)) {
-              console.log("Success")
-              lel = document.createElement("li");
-              lel.innerText = element.innerText;
-              ulContainer.appendChild(lel);
-            } else {
-              lel = document.createElement("li");
-              lel.innerText = "No search results found.";
-              ulContainer.appendChild(lel);
-            }
-          }) ); // got "unexpected }" (the one that closed )
+        if ((element.innerText).includes(searchTerm.value)) {
+          console.log("Success")
+          lel = document.createElement("li");
+          lel.innerText = element.innerText;
+          ulContainer.appendChild(lel);
+        }   
+
+      } ));
+      
+      //console.log("AllLIs length before if is: ", AllLIs.length);
+
+      if ( (Array.from(document.getElementsByTagName("li")).length) === 0 ) {
+        console.log("Success ----")
+        lel = document.createElement("li");
+        lel.innerText = "No search results found.";
+        ulContainer.appendChild(lel);
+      } // got "unexpected }" (the one that closed )
+
+
+          // Q: didn't like this nested, hard to nest ifs & anon funcs? 
+
+          // if (AllLIs.forEach(function(element) 
+          // {
+          //   console.log("Element is: ", element)
+          //   console.log("Element innerText is: ", element.innerText)
+          //   console.log("searchTerm.value  is: ", searchTerm.value)
+
+          //   if ((element.innerText).includes(searchTerm.value)) {
+          //     console.log("Success")
+          //     lel = document.createElement("li");
+          //     lel.innerText = element.innerText;
+          //     ulContainer.appendChild(lel);
+          //   })   
+
+          // } else {
+          //   lel = document.createElement("li");
+          //   lel.innerText = "No search results found.";
+          //   ulContainer.appendChild(lel);
+          // }); // got "unexpected }" (the one that closed )
+
+
+
 
 
           // if (AllLIs.forEach(doSearch(element))) {
