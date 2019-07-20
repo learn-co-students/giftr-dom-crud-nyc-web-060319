@@ -52,19 +52,33 @@ document.addEventListener('DOMContentLoaded', () => {
       e.preventDefault();
       const newGift = document.createElement("li");
       console.log("createnewGift name is: ", createNewGiftName)
-      console.log("newGift is: ", newGift)
+      // console.log("newGift is: ", newGift)
       newGift.innerText = createNewGiftName;
       newGift.src = createNewGiftPic;
       newGift.setAttribute("id", counter);
       ulContainer.appendChild(newGift);
      
+
       appendDeleteButton(newGift);
       appendEditButton(newGift);
-
+      appendImage(newGift);
+      
+      console.log("createnewGiftPic is: ", createNewGiftPic)
       createNewGiftName.value = "";
       createNewGiftPic.value = "";
       counter ++;
     }
+
+    function appendImage(newListItem){
+      let createNewGiftPic = document.querySelector("#gift-image-input").value;
+      console.log("reateNewGiftPic is:  ", createNewGiftPic);
+
+      let pic = document.createElement("img");
+      pic.src = createNewGiftPic;
+      newListItem.appendChild(pic);
+    }
+
+
 
     function appendEditButton(newListItem){
       //e.preventDefault();  // Don't need bc button?
