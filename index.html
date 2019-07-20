@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.3/dist/semantic.min.css">
-    <link rel="stylesheet" href="src/index.css"></script>
+    <link rel="stylesheet" href="src/index.css"> 
+  <!-- </script> -->
     <script src="src/eventHandlers.js" charset="utf-8"></script>
     <script src="src/giftData.js" charset="utf-8"></script>
     <script src="src/index.js" charset="utf-8"></script>
@@ -25,8 +26,8 @@
 
           <!-- CODE FOR SEARCH FORM -->
           <div class="ui icon input">
-            <input id="filter-input" type="text" name="filter" value="" placeholder="Search for gifts...">
-            <i class="search icon"></i>
+            <input id="filter-input" type="text" name="filter" placeholder="Search for gifts...">
+            <button type="submit" id="search-btn"><i class="search icon"></i></button>
           </div>
 
           <!-- END CODE FOR SEARCH FORM -->
@@ -37,9 +38,9 @@
           <!-- CODE FOR NEW GIFT FORM -->
           <form id="gift-form" class="ui form" action="index.html" method="POST">
             <label for="name">Gift Name: </label>
-            <input id="gift-name-input" type="text" name="name" value="">
+            <input id="gift-name-input" type="text" name="name" placeholder="name!">
             <label for="image">Gift Image: </label>
-            <input id="gift-image-input" type="text" name="image" value="">
+            <input id="gift-image-input" type="text" name="image" placeholder="pic link">
             <br>
             <button id="gift-form-button" type="submit" name="button" class="ui button">Create Gift</button>
           </form>
@@ -54,7 +55,7 @@
 
           <!-- CODE FOR LIST OF GIFTS -->
           <ul class="gift-list">
-            <li>No gifts yet :(</li>
+            <li>No gifts yet :(  OH WAIT:</li>
           </ul>
           <!-- ENDCODE FOR LIST OF GIFTS -->
 
