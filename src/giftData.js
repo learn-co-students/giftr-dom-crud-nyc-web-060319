@@ -2,7 +2,7 @@ const gifts = [
   {
     id: 1,
     name: '8 pairs of socks',
-    image: 'https://cdn.shopify.com/s/files/1/1631/8771/products/wnc871-ggr_gumby_gumby_green_1_large.jpg?v=1494450059'
+    image: 'https://www.ioffer.com/img3/item/666/016/246/8-pairs-men-socks-woman-cotton-sock-sox-footwear-hose-cdad.jpg'
   },
   {
     id: 2,
@@ -18,6 +18,6 @@ const gifts = [
   {
     id: 4,
     name: 'the last dab',
-    image: 'https://cdn.shopify.com/s/files/1/2086/9287/products/LAstdabReduxx_1024x1024-1_1024x1024.jpg?v=1527778720'
+    image: 'https://cdn.shopify.com/s/files/1/2086/9287/products/reaperdab1_1024x1024.jpg?v=1556732908'
   }
 ]
